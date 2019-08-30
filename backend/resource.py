@@ -26,8 +26,7 @@ def getPassiveRateAvg():
 	return json.loads(out)
 
 def initialize():
-	# getInfoFlag = processPasiveRateHTML.process()
-	getInfoFlag = True
+	getInfoFlag = processPasiveRateHTML.process()
 	if (getInfoFlag):
 		app.run(host='0.0.0.0', port=5000)
 
