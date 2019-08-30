@@ -1,3 +1,10 @@
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
+
 EXAMPLE OF DOCKER + PYTHON + FLASK + WEB PAGE
 =============================================
 
@@ -5,20 +12,12 @@ EXAMPLE OF DOCKER + PYTHON + FLASK + WEB PAGE
 
 CD into the directory
 
+Create backend image
 ```
 cd pyhton-docker-example/
 cd backend/
 docker build -t python-example-be .
-```
-
-To run the image on port 5000
-
-```
 docker run  -p 5000:5000 python-example-be:latest
-```
-
-Export the image
-```
 docker save python-example-be > /tmp/python-example-be.tar
 ```
 
