@@ -1,0 +1,85 @@
+EXAMPLE OF DOCKER + PYTHON + FLASK + WEB PAGE
+===========================================
+
+# CREATING DOCKER IMAGES
+
+CD into the directory
+
+```
+cd pyhton-docker-example/
+```
+
+Create Backend image
+
+```
+cd backend/
+```
+
+Build the image
+
+```
+docker build -t python-example-be .
+```
+
+To run the image on port 5000
+
+```
+docker run  -p 5000:5000 python-example-be:latest
+```
+
+Export the image
+```
+docker save python-example-be > /tmp/python-example-be.tar
+```
+
+Create frontend image
+
+```
+cd frontend/
+```
+
+Build the image
+
+```
+docker build -t python-example-fe .
+```
+
+To run the image on port 50001
+
+```
+docker run  -p 5001:5001 python-example-fe:latest
+```
+
+Export the image
+```
+docker save python-example-fe > /tmp/python-example-fe.tar
+```
+
+
+# LOADING DOCKER IMAGES
+
+Import the image
+```
+docker load < /tmp/python-example-be.tar
+```
+```
+docker load < /tmp/python-example-fe.tar
+```
+
+Run the image
+```
+docker run  -p 5001:5001 python-example-fe:latest
+```
+```
+docker run  -p 5000:5000 python-example-be:latest
+```
+
+AUTORS
+=======
+
+Aaron Elizondo Gamboa
+
+LICENSE
+=======
+
+MIT
