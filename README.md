@@ -27,8 +27,8 @@ Enter to http://localhost:5001/ and wait for a moment
 
 Import the image
 ```
-docker load < ./python-example-be.tar
-docker load < ./python-example-fe.tar
+docker load < ./backend/python-example-be.tar
+docker load < ./frontend/python-example-fe.tar
 ```
 
 Run the image
