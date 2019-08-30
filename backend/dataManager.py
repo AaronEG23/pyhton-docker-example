@@ -47,7 +47,7 @@ def select(pYearStart, pYearEnd, pMonthStart, pMonthEnd):
 	if (pMonthStart != None):
 		if (addAnd):
 			baseQuery = baseQuery + " AND"
-		baseQuery = baseQuery + " month<="+str(pMonthStart)
+		baseQuery = baseQuery + " month>="+str(pMonthStart)
 		addAnd = True
 
 	if (pMonthEnd != None):
