@@ -68,7 +68,6 @@ var mosp = {
     init: function() {
 
 		mosp.formLib = validateFormLib(mosp.formElements, function(result){
-			console.log(result);
         });  
 
         $( document ).keyup(function(e){
@@ -95,8 +94,15 @@ var mosp = {
         f_globals.resource('GET', "/getPassiveRateAvg" , pData,
             function(response) {
             	if (response.value){
-            		$("#calc-result").text(response.value.toFixed(2));
+                    try{
+                        $("#calc-result").text(response.value.toFixed(2));
+                    }catch{
+                        $("#calc-result").text("Invalid parameters");
+                    }
             	}
+            },
+            function(error) {
+                $("#calc-result").text("Start the backend and wait for a moment");
             }
         );
     }
