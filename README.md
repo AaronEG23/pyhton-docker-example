@@ -1,5 +1,5 @@
 
-EXAMPLE OF DOCKER + PYTHON + FLASK + WEB PAGE
+EXAMPLE OF DOCKER + PYTHON + FLASK + SQLITE3 + WEB APP
 =============================================
 
 # LOADING DOCKER IMAGES
