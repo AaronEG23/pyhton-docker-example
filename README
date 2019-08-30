@@ -1,5 +1,5 @@
 EXAMPLE OF DOCKER + PYTHON + FLASK + WEB PAGE
-===========================================
+=============================================
 
 # CREATING DOCKER IMAGES
 
@@ -7,17 +7,7 @@ CD into the directory
 
 ```
 cd pyhton-docker-example/
-```
-
-Create Backend image
-
-```
 cd backend/
-```
-
-Build the image
-
-```
 docker build -t python-example-be .
 ```
 
