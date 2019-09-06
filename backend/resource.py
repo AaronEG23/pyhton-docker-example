@@ -18,6 +18,7 @@ def getPassiveRateAvg():
 	endYear = request.args.get('endYear')
 	startMonth = request.args.get('startMonth')
 	endMonth = request.args.get('endMonth')
+	
 	result =  dataManager.select(starYear, endYear, startMonth, endMonth)
 	if (result != None):
 		out =  '{ "value":'+ str(result) +' }'

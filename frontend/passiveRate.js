@@ -35,7 +35,7 @@ var mosp = {
         },
         {
             id          : "form-starMonth",
-            name        : "starMonth",
+            name        : "startMonth",
             type        : "number",
             classDiv    : "mt-4",
             icon 		: "fa fa-calendar",
